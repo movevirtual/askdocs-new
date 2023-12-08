@@ -5,7 +5,7 @@ import { MdOutlineGeneratingTokens } from "react-icons/md";
 
 export default function CreditComponent() {
   return (
-    <div className="credit__component py-7">
+    <div className="credit__component py-8">
       <div className="flex items-center justify-between pb-5">
         <p className="text-[15px] text-slate-700/50 font-semibold">Credits</p>
         <MdOutlineGeneratingTokens className="text-xl text-slate-500/50" />
