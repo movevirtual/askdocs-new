@@ -36,10 +36,10 @@ export default function ProfileComponent() {
     <div className="name__component flex items-center justify-between">
       <div className="account__details select-none flex items-center gap-x-3">
         <DropdownMenu>
-          <div className="account__details flex items-center gap-x-3">
+          <div className="account__details flex items-center gap-x-5">
             <DropdownMenuTrigger className="outline-none focus:ring-2 ring-offset-2 rounded-full">
               <img
-                className="rounded-full w-12 h-12 object-cover ring ring-offset-2 ring-[#40CD77]"
+                className="rounded-full w-10 h-10 object-cover ring ring-offset-2 ring-[#40CD77]"
                 src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
               />
