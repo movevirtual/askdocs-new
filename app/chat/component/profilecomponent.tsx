@@ -39,26 +39,16 @@ export default function ProfileComponent() {
           <DropdownMenuTrigger className="outline-none focus:ring-2 ring-offset-2 rounded-full">
             <div className="account__details flex items-center gap-x-3">
               <img
-                className="rounded-full w-12 h-12 object-cover"
+                className="rounded-full w-12 h-12 object-cover ring ring-offset-2 ring-[#40CD77]"
                 src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
               />
             </div>
           </DropdownMenuTrigger>
           <DropdownMenuContent className="min-w-[260px] mb-3 ml-5">
-            {/*  <DropdownMenuItem>
-              <a href="#">Billing</a>
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              <a href="#">Support</a>
-            </DropdownMenuItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem>
-              <a href="#">Sign Out</a>
-            </DropdownMenuItem> */}
             {dropdownMenuItems.map((item, index, array) => (
               <div key={item.id}>
-                <DropdownMenuItem>
+                <DropdownMenuItem className="cursor-pointer">
                   <a href={item.link}>
                     <div className="flex items-center gap-x-3">
                       <div className="flex items-center justify-center w-8 h-8 rounded-full bg-slate-100 text-slate-500">
