@@ -1,16 +1,20 @@
 import { MdLink } from "react-icons/md";
 import { FiFileText } from "react-icons/fi";
 import { BsChatDots } from "react-icons/bs";
+import { MdOutlineGeneratingTokens } from "react-icons/md";
 
 export default function CreditComponent() {
   return (
     <div className="credit__component">
-      <p className="text-base text-slate-700/50 pb-5">Credits</p>
+      <div className="flex items-center justify-between pb-5">
+        <p className="text-[15px] text-slate-700/50 font-semibold">Credits</p>
+        <MdOutlineGeneratingTokens className="text-xl text-slate-500/50" />
+      </div>
 
       <div className="flex flex-col gap-y-5">
         <div className="flex items-center gap-x-2 justify-between">
           <div className="w-10">
-            <div className="flex items-center justify-center h-8 w-8 rounded-md bg-[#f5f5f5] text-black">
+            <div className="flex items-center justify-center h-8 w-8 rounded-md bg-[#E8E8E8] text-black">
               <FiFileText className="text-base" />
             </div>
           </div>
@@ -26,7 +30,7 @@ export default function CreditComponent() {
         </div>
         <div className="flex items-center gap-x-2 justify-between">
           <div className="w-10">
-            <div className="flex items-center justify-center h-8 w-8 rounded-md bg-[#f5f5f5] text-black">
+            <div className="flex items-center justify-center h-8 w-8 rounded-md bg-[#E8E8E8] text-black">
               <BsChatDots className="text-base" />
             </div>
           </div>
@@ -42,7 +46,7 @@ export default function CreditComponent() {
         </div>
         <div className="flex items-center gap-x-2 justify-between">
           <div className="w-10">
-            <div className="flex items-center justify-center h-8 w-8 rounded-md bg-[#f5f5f5] text-black">
+            <div className="flex items-center justify-center h-8 w-8 rounded-md bg-[#E8E8E8] text-black">
               <MdLink className="text-base" />
             </div>
           </div>
