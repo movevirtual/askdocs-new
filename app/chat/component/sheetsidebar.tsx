@@ -17,7 +17,7 @@ export default function SheetSidebar() {
         <SheetTrigger>
           <IoSettingsOutline className="xl:hidden absolute top-2 right-2 text-xl text-slate-500" />
         </SheetTrigger>
-        <SheetContent side={"left"} className="w-[300px] p-0 pt-5">
+        <SheetContent side={"left"} className="w-[300px] p-0">
           <SidebarComponent />
         </SheetContent>
       </Sheet>
