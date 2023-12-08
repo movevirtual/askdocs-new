@@ -15,8 +15,8 @@ export default function SheetSidebar() {
   return (
     <div>
       <Sheet>
-        <SheetTrigger>
-          <RxHamburgerMenu className="xl:hidden absolute top-2 right-2 text-xl text-slate-500" />
+        <SheetTrigger className="xl:hidden absolute top-2 right-2">
+          <RxHamburgerMenu className="text-xl text-slate-500" />
         </SheetTrigger>
         <SheetContent side={"left"} className="w-[300px] p-0">
           <SidebarComponent />
