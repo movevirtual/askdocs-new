@@ -16,8 +16,8 @@ export default function CreditComponent() {
           </div>
           <div className="flex-1">
             <div className="flex items-center justify-between">
-              <p>Docments</p>
-              <p className="text-sm">18/60</p>
+              <p className="text-[15px] font-medium">Documents</p>
+              <p className="text-sm font-medium">18/60</p>
             </div>
             <div className="ranger">
               <div className="ranger__bar w-full h-1.5 bg-green-400 rounded-full"></div>
@@ -32,8 +32,8 @@ export default function CreditComponent() {
           </div>
           <div className="flex-1">
             <div className="flex items-center justify-between">
-              <p>Questions</p>
-              <p className="text-sm">18/60</p>
+              <p className="text-[15px] font-medium">Questions</p>
+              <p className="text-sm font-medium">18/60</p>
             </div>
             <div className="ranger">
               <div className="ranger__bar w-full h-1.5 bg-green-400 rounded-full"></div>
@@ -48,8 +48,8 @@ export default function CreditComponent() {
           </div>
           <div className="flex-1">
             <div className="flex items-center justify-between">
-              <p>Youtube Links</p>
-              <p className="text-sm">18/60</p>
+              <p className="text-base font-medium">Youtube Links</p>
+              <p className="text-sm font-medium">18/60</p>
             </div>
             <div className="ranger">
               <div className="ranger__bar w-full h-1.5 bg-green-400 rounded-full"></div>

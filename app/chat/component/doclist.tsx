@@ -27,9 +27,12 @@ export default function DocList() {
         <MdOutlineDriveFolderUpload className="text-xl text-slate-500/50" />
       </div>
       <div className="document__list__item">
-        <div className="flex flex-col gap-y-5 items-start gap-x-4 py-4">
+        <div className="flex flex-col gap-y-0 items-start gap-x-4 py-4">
           {documentList.map((item) => (
-            <div key={item.id} className="flex items-center gap-x-2">
+            <div
+              key={item.id}
+              className="flex items-center gap-x-2 first:rounded-t-md last:rounded-b-md border border-dashed border-slate-300/30 border-b-0 last:border-b w-full p-2 hover:bg-[#40CD77]/10 cursor-pointer"
+            >
               <FiFileText className="text-base text-slate-700/70" />
               <p className="text-base text-slate-800 font-medium">
                 {item.title}
