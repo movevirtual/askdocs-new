@@ -6,7 +6,7 @@ import { MdLink } from "react-icons/md";
 
 export default function UploadUI() {
   return (
-    <section className="flex-1 h-screen relative">
+    <section className="flex-1 h-[100svh] relative">
       <SheetSidebar />
       <div className="flex items-center justify-center h-full p-10">
         <div className="p-10 md:p-0 border-2 w-full h-fit md:h-full flex items-center justify-center border-dashed border-[#63656A]/20 bg-[#FAFAFA] rounded-lg">
