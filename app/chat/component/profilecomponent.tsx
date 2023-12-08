@@ -1,16 +1,80 @@
 import { IoSettingsOutline } from "react-icons/io5";
+import { FiHelpCircle } from "react-icons/fi";
+import { TbLogout } from "react-icons/tb";
+import { LuWallet } from "react-icons/lu";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+
+const dropdownMenuItems = [
+  {
+    id: 1,
+    name: "Billing",
+    icon: <LuWallet />,
+    link: "#",
+  },
+  {
+    id: 2,
+    name: "Support",
+    icon: <FiHelpCircle />,
+    link: "#",
+  },
+  {
+    id: 3,
+    name: "Sign Out",
+    icon: <TbLogout />,
+    link: "#",
+  },
+];
 
 export default function ProfileComponent() {
   return (
     <div className="name__component flex items-center justify-between">
+      <div className="account__details select-none flex items-center gap-x-3">
+        <DropdownMenu>
+          <DropdownMenuTrigger className="outline-none focus:ring-2 ring-offset-2 rounded-full">
+            <div className="account__details flex items-center gap-x-3">
+              <img
+                className="rounded-full w-12 h-12 object-cover"
+                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className="min-w-[260px] mb-3 ml-5">
+            {/*  <DropdownMenuItem>
+              <a href="#">Billing</a>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <a href="#">Support</a>
+            </DropdownMenuItem>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem>
+              <a href="#">Sign Out</a>
+            </DropdownMenuItem> */}
+            {dropdownMenuItems.map((item, index, array) => (
+              <div key={item.id}>
+                <DropdownMenuItem>
+                  <a href={item.link}>
+                    <div className="flex items-center gap-x-3">
+                      <div className="flex items-center justify-center w-8 h-8 rounded-full bg-slate-100 text-slate-500">
+                        {item.icon}
+                      </div>
+                      <span>{item.name}</span>
+                    </div>
+                  </a>
+                </DropdownMenuItem>
+                {index === array.length - 2 && <DropdownMenuSeparator />}
+              </div>
+            ))}
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </div>
       <div className="flex items-center gap-x-5">
-        <div>
-          <img
-            className="rounded-full w-12 h-12 object-cover"
-            src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt=""
-          />
-        </div>
         <div>
           <div className="flex flex-col gap-y-0.5">
             <p className="text-sm font-bold ">Amy Elimam</p>
