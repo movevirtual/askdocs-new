@@ -8,6 +8,7 @@ import {
   SheetClose,
 } from "@/components/ui/sheet";
 import { IoSettingsOutline } from "react-icons/io5";
+import { RxHamburgerMenu } from "react-icons/rx";
 import SidebarComponent from "./sidebarcomponent";
 
 export default function SheetSidebar() {
@@ -15,7 +16,7 @@ export default function SheetSidebar() {
     <div>
       <Sheet>
         <SheetTrigger>
-          <IoSettingsOutline className="xl:hidden absolute top-2 right-2 text-xl text-slate-500" />
+          <RxHamburgerMenu className="xl:hidden absolute top-2 right-2 text-xl text-slate-500" />
         </SheetTrigger>
         <SheetContent side={"left"} className="w-[300px] p-0">
           <SidebarComponent />
