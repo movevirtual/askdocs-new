@@ -31,10 +31,10 @@ export default function DocList() {
           {documentList.map((item) => (
             <div
               key={item.id}
-              className="flex items-center gap-x-2 first:rounded-t-md last:rounded-b-md border border-dashed border-slate-300/30 border-b-0 last:border-b w-full p-2 hover:bg-[#40CD77]/10 cursor-pointer"
+              className="flex items-center gap-x-2 first:rounded-t-md last:rounded-b-md border border-dashed border-slate-300/30 border-b-0 last:border-b w-full p-2 py-3 hover:bg-[#40CD77]/10 cursor-pointer"
             >
               <FiFileText className="text-base text-slate-700/70" />
-              <p className="text-base text-slate-800 font-medium">
+              <p className="text-[15px] lg:text-base text-slate-800 font-medium">
                 {item.title}
               </p>
             </div>
