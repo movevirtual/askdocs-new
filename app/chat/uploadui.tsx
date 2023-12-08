@@ -9,7 +9,7 @@ export default function UploadUI() {
     <section className="flex-1 h-screen relative">
       <SheetSidebar />
       <div className="flex items-center justify-center h-full p-10">
-        <div className="border-2 w-full h-full flex items-center justify-center border-dashed border-[#63656A]/20 bg-[#FAFAFA] rounded-lg">
+        <div className="p-10 md:p-0 border-2 w-full h-fit md:h-full flex items-center justify-center border-dashed border-[#63656A]/20 bg-[#FAFAFA] rounded-lg">
           <div className="flex flex-col gap-y-2 items-center justify-center">
             <div className="flex flex-col gap-y-1 items-center justify-center">
               <AiOutlineCloudUpload className="text-4xl text-slate-700" />
